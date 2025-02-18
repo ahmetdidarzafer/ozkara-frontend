@@ -27,11 +27,11 @@ const Login = () => {
         }));
         
         // Kullanıcı rolüne göre yönlendirme
-        if (response.data.user.role === 'admin') {
-          navigate('/admin');
-        } else {
-          navigate('/');
-        }
+        //if (response.data.user.role === 'admin') {
+        //  navigate('/admin');
+        //} else {
+        navigate('/');
+        //}
         
         // Sayfayı yenile
         window.location.reload();
