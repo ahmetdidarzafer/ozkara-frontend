@@ -195,6 +195,11 @@ const Navbar = () => {
                   </Link>
                 </>
               )}
+              {userRole === 'admin' && (
+                <Link to="/admin" className="block px-3 py-2 text-sm font-montserrat tracking-wider hover:bg-luxury-800 luxury-transition">
+                  YÖNETİM PANELİ
+                </Link>
+              )}
               {isAuthenticated && (
                 <button
                   onClick={() => {
