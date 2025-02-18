@@ -1,0 +1,7 @@
+{
+    "routes": {
+      "/admin": "index.html",
+      "/": "index.html",
+      "/*": "index.html"
+    }
+  }
