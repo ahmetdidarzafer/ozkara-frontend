@@ -26,13 +26,13 @@ const Login = () => {
           role: response.data.user.role
         }));
         
-        // Kullanıcı rolüne göre yönlendirme
-        //if (response.data.user.role === 'admin') {
-        //  navigate('/admin');
-        //} else {
-        navigate('/');
-        //}
+        //Kullanıcı rolüne göre yönlendirme
+        if (response.data.user.role === 'admin') {
+         navigate('/admin');
+        } else {
         
+        }
+        // navigate('/');
         // Sayfayı yenile
         window.location.reload();
         showToast('Giriş başarılı', 'success');
