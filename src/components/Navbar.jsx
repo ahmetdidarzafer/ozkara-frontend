@@ -39,7 +39,7 @@ const Navbar = () => {
               </Link>
               {userRole !== 'admin' && (
                 <Link to="/appointment" className="font-montserrat text-sm tracking-wider hover:text-gold-400 luxury-transition">
-                  RANDEVU
+                  RANDEVU AL
                 </Link>
               )}
               {userRole === 'admin' && (
@@ -155,7 +155,7 @@ const Navbar = () => {
               className="block px-3 py-2 text-sm font-montserrat tracking-wider hover:bg-luxury-800 luxury-transition"
               onClick={() => setIsOpen(false)}
             >
-              RANDEVU
+              RANDEVU AL
             </Link>
           )}
           {!isAuthenticated ? (
