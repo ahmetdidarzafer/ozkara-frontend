@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // API instance oluştur
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL,
+  baseURL: import.meta.env.VITE_REACT_APP_API_URL,
   timeout: 30000, // 30 saniyeye çıkardık
   headers: {
     'Content-Type': 'application/json'
