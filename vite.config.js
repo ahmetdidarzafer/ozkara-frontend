@@ -6,12 +6,16 @@ export default defineConfig({
   plugins: [react()],
   server: {
     historyApiFallback: true,
-    // proxy: {
-    //   '/api': {
-    //     target: 'http://localhost:5001', // Portu burada da güncelliyoruz
-    //     changeOrigin: true,
-    //     secure: false,
-    //   },
-    // },
+    proxy: {
+      '/api': {
+        target: 'https://ozkara-backend.onrender.com', // Portu burada da güncelliyoruz
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+    build: {
+      outDir: 'dist',
+    },
   },
+  base: '/',
 })
