@@ -11,7 +11,6 @@ const BRANDS = [
   'Shell',
   'Petrol Ofisi',
   'Elf',
-  'SNC Oil'
 ];
 
 const OIL_CATEGORIES = [
@@ -127,7 +126,7 @@ const Products = () => {
         
         {/* Filtreler */}
         <div className="bg-white shadow-lg p-6 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Marka Filtresi */}
             <div>
               <label className="block font-montserrat text-sm text-luxury-600 mb-2">
@@ -164,8 +163,8 @@ const Products = () => {
               </select>
             </div>
 
-            {/* Minimum Fiyat */}
-            <div>
+            
+            {/* <div>
               <label className="block font-montserrat text-sm text-luxury-600 mb-2">
                 MİNİMUM FİYAT
               </label>
@@ -179,20 +178,20 @@ const Products = () => {
               />
             </div>
 
-            {/* Maksimum Fiyat */}
-            <div>
-              <label className="block font-montserrat text-sm text-luxury-600 mb-2">
-                MAKSİMUM FİYAT
-              </label>
-              <input
-                type="number"
-                name="maxPrice"
-                value={filters.maxPrice}
-                onChange={handleFilterChange}
-                className="w-full p-2 border border-luxury-200 rounded-md"
-                min="0"
-              />
-            </div>
+            
+            // <div>
+            //   <label className="block font-montserrat text-sm text-luxury-600 mb-2">
+            //     MAKSİMUM FİYAT
+            //   </label>
+            //   <input
+            //     type="number"
+            //     name="maxPrice"
+            //     value={filters.maxPrice}
+            //     onChange={handleFilterChange}
+            //     className="w-full p-2 border border-luxury-200 rounded-md"
+            //     min="0"
+            //   />
+            // </div>  */}
 
             {/* Sıralama */}
             <div>
@@ -205,8 +204,8 @@ const Products = () => {
                 className="w-full p-2 border border-luxury-200 rounded-md"
               >
                 <option value="">Varsayılan</option>
-                <option value="price-asc">Fiyat (Düşükten Yükseğe)</option>
-                <option value="price-desc">Fiyat (Yüksekten Düşüğe)</option>
+                {/* <option value="price-asc">Fiyat (Düşükten Yükseğe)</option>
+                <option value="price-desc">Fiyat (Yüksekten Düşüğe)</option> */}
                 <option value="brand-asc">Marka (A-Z)</option>
                 <option value="brand-desc">Marka (Z-A)</option>
               </select>
@@ -245,12 +244,12 @@ const Products = () => {
                   <div className="p-6">
                     <h3 className="font-playfair text-xl mb-4">{product.name}</h3>
                     <p className="text-luxury-600 mb-4">{product.description}</p>
-                    <div className="flex justify-between items-center">
+                    {/* <div className="flex justify-between items-center">
                       <span className="font-playfair text-xl text-gold-600">
                         {product.price} ₺
                       </span>
                       <span className="text-luxury-600">Stok: {product.stock}</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))
